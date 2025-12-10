@@ -1,0 +1,19 @@
+# Ubuntu 20.04 (Python 3.8) 설치 명령어
+# 터미널에 복사-붙여넣기 하세요!
+
+# 1. 가상환경 활성화 (이미 되어 있다면 건너뛰기)
+source venv/bin/activate
+
+# 2. Python 3.8 호환 패키지 설치 (한 줄로!)
+pip install --upgrade pip && \
+pip install typing-extensions==4.8.0 fsspec==2024.6.1 filelock==3.13.1 sympy==1.12 networkx==3.1 && \
+pip install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cpu && \
+pip install easyocr opencv-python-headless numpy Pillow scipy
+
+# 3. 설치 확인
+python -c "import torch; print(f'PyTorch 버전: {torch.__version__}')"
+python -c "import easyocr; print('EasyOCR 설치 완료!')"
+
+# 4. 실행 테스트
+python main.py --image test.jpg
+

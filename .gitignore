@@ -1,0 +1,61 @@
+.git
+.vscode
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 가상환경
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 빌드
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# EasyOCR 모델 캐시
+.EasyOCR/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 테스트 이미지/비디오
+test_images/
+test_videos/
+output/
+*.mp4
+*.avi
+*.jpg
+*.png
+*.jpeg
+
+# 로그
+*.log
